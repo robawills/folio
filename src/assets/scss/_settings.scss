@@ -76,14 +76,14 @@ $foundation-palette: (
   alert: #cc4b37,
 );
 
-$blue: #002fff;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #535353;
+$blue: #0e28ce;
+$light-gray: #f0efec;
+$medium-gray: #979797;
+$dark-gray: #1d1d1d;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $dark-gray;
+$body-font-color: $black;
 $body-font-family: 'lato', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -149,8 +149,8 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
+    'h1': ('font-size': 40),
+    'h2': ('font-size': 30),
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
@@ -169,7 +169,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $dark-gray;
+$anchor-color: $black;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -209,6 +209,7 @@ $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
 $stat-font-size: 2.5rem;
+
 
 // 6. Abide
 // --------

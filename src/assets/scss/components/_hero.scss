@@ -1,17 +1,18 @@
 .hero {
-    position: absolute;
-    top:0;
-    width: 100%;
     height: 50vh;
-    min-height: 35rem;
+    min-height: 37rem;
     background-color: $light-gray;
     z-index: -1;
-
+    margin-top: -7rem;
     
     &__title {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         margin: 14rem 0;
+    }
+
+    &__slider {
+        color: $blue;
     }
 }

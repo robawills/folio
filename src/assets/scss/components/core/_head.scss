@@ -8,7 +8,10 @@
         width: 4rem;
         height: auto;
     }
-}
 
+    &__logo:hover {
+        fill: $blue;
+    }
+}
 
 
