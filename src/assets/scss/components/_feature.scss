@@ -1,22 +1,12 @@
 .feature {
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
     margin-top: -7rem;
-    
+    margin-bottom: 3rem;
 
     &__img {
-        height: 20rem;
+        height: 15rem;
         background-color: $blue;
         margin-bottom: 1.75rem;
 
-        &--m {
-            height: 25rem;
-        }
-
-        &--l {
-            height: 30rem;
-        }
     }
 
     &__info .button {
@@ -33,5 +23,46 @@
         border-color: $blue;
         color: white;
         background-color: $blue;
+    }
+
+    &__cell {
+        margin-bottom: 3rem;
+    }
+}
+
+@include breakpoint(medium) {
+    .feature {
+        &__cell {
+            margin-bottom: 0;
+        }
+
+        &__img {
+            height: 13rem;
+    
+            &--m {
+                height: 18rem;
+            }
+    
+            &--l {
+                height: 22rem;
+            }
+        }
+    }
+}
+
+@include breakpoint(large) {
+    .feature {
+
+        &__img {
+            height: 20rem;
+    
+            &--m {
+                height: 25rem;
+            }
+    
+            &--l {
+                height: 30rem;
+            }
+        }
     }
 }
