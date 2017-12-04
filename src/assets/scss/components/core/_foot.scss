@@ -3,8 +3,15 @@
 \*----------------------------------------------------------------------------*/
 
 .footer {
-
-    padding: 5rem 0 10rem;
+    padding: 5rem 0;
+    &__form {
+        margin: 1.5rem 0 2rem;
+    }
+    &__copy {
+        font-size: 0.75rem;
+        color: $medium-gray;
+        margin-top: 5rem;
+    }
 }
 
 

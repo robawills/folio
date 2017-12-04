@@ -1,6 +1,11 @@
-.feature {
-    margin-top: -7rem;
-    margin-bottom: 3rem;
+.project {
+    
+    margin-top: -18rem;
+
+    &--feature {
+        margin-top: -10rem;
+        margin-bottom: 3rem;
+    }
 
     &__img {
         height: 15rem;
@@ -26,12 +31,13 @@
     }
 
     &__cell {
-        margin-bottom: 3rem;
+        margin: 3rem 0;
+        position: relative;
     }
 }
 
 @include breakpoint(medium) {
-    .feature {
+    .project {
         &__cell {
             margin-bottom: 0;
         }
@@ -51,7 +57,7 @@
 }
 
 @include breakpoint(large) {
-    .feature {
+    .project {
 
         &__img {
             height: 20rem;

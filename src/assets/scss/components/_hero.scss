@@ -1,9 +1,12 @@
 .hero {
-    height: 50vh;
-    min-height: 37rem;
+    height: 30rem;
     background-color: $light-gray;
     z-index: -1;
-    
+
+    &--home {
+        height: 50vh;
+        min-height: 37rem;
+    }
     
     &__title {
         display: flex;
