@@ -1,3 +1,10 @@
-.menu li:hover  {
-    border-bottom: 0.2rem solid black;
+.menu a  {
+    border-bottom: 0.2rem solid rgba(240, 239, 236, 0);
+    margin: 0 0.25rem;
+    transition: all 0.5s ease;
 }
+
+.menu a:hover  {
+    border-bottom: 0.2rem solid $blue;
+}
+

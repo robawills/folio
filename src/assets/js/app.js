@@ -12,4 +12,12 @@ import Foundation from 'foundation-sites';
 $(document).foundation();
 
 
-import './modules/object-fit';
+var prev = 0;
+var $window = $(window);
+var nav = $('.head');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass('hidden', scrollTop > prev);
+  prev = scrollTop;
+});
