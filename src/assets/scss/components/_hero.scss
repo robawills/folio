@@ -7,6 +7,12 @@
         height: 50vh;
         min-height: 37rem;
     }
+
+    &--metis {
+        background-image:linear-gradient(to top right, #18134A, #302693);
+        color: white;
+        height: auto;
+    }
     
     &__title {
         display: flex;
