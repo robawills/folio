@@ -5,14 +5,13 @@ $scrollhide-nav-transition-speed: 0.8s;
 
 .head {
     padding: 1.2rem 0;
-    z-index: 4;
+    z-index: 5;
     position: fixed;
     right: 0;
     top: 0;
     left: 0;
     transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
 
-    
 
     &.hidden {
         transform: translateY(-100%);
@@ -21,6 +20,7 @@ $scrollhide-nav-transition-speed: 0.8s;
     &__logo {
         width: 3rem;
         height: auto;
+        fill:#fff;
     }
 
     &__logo:hover {

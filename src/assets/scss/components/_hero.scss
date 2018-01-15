@@ -1,11 +1,14 @@
 .hero {
     height: 30rem;
-    background-color: $light-gray;
-    z-index: -1;
+    background-color: #0e0e0e;
+    transition:all 200ms;
 
     &--home {
         height: 50vh;
         min-height: 37rem;
+        background-color: #0e0e0e;
+        background-image: url(../img/background-screens.svg);
+        background-size: 100% auto;
     }
 
     &--metis {
@@ -19,6 +22,7 @@
         flex-direction: column;
         justify-content: flex-start;
         margin: 11rem 0;
+        color: white;
     }
 
     &__slider {
