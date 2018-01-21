@@ -23,15 +23,32 @@ $window.on('scroll', function(){
 });
 
 
+
+$(window).scroll(function(event){
+
+	var yOffset = window.pageYOffset;
+	var breakpoint = 150;
+	if (yOffset > breakpoint){
+	  $(".head").addClass('active');
+	}else{
+	  $(".head").removeClass('active');
+	}
+  
+  });
+
+
+
+
+
 // Background colours
 
-var darkgrey = "#171717",
+var darkgrey = "#0e0e0e",
 	white = "#ffffff",
 	lightgrey = "#F7F6F2";
 
 $(window).on("scroll touchmove", function() {
 		if ($(document).scrollTop() >= $("#darkgrey").position().top) {
-				$('.hero').css('background', $("#darkgrey").attr("data-color"));
+				$('.hero').css('background-color', $("#darkgrey").attr("data-color"));
 
 		};
 		if ($(document).scrollTop() > $("#white").position().top) {
@@ -44,3 +61,5 @@ $(window).on("scroll touchmove", function() {
 
 });
 jackHarnerSig("light")
+
+

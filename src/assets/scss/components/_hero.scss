@@ -1,13 +1,12 @@
 .hero {
-    height: 30rem;
     background-color: #0e0e0e;
     transition:all 200ms;
 
     &--home {
-        height: 50vh;
+        height: 90vh;
         min-height: 37rem;
         background-color: #0e0e0e;
-        background-image: url(../img/background-screens.svg);
+        background-image: url(../img/home-hero.svg);
         background-size: 100% auto;
     }
 
@@ -17,13 +16,19 @@
         height: auto;
     }
     
+    // &__title {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    //     margin: 20rem 0;
+    //     color: white;
+    // }
+
     &__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 11rem 0;
+        
         color: white;
     }
+
 
     &__slider {
         color: $blue;

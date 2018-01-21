@@ -21,6 +21,7 @@ $scrollhide-nav-transition-speed: 0.8s;
         width: 3rem;
         height: auto;
         fill:#fff;
+        transition: all 0.4s ease;
     }
 
     &__logo:hover {
@@ -28,7 +29,10 @@ $scrollhide-nav-transition-speed: 0.8s;
     }
 }
 
-
+.head.active {
+    background-color:rgba(7, 7, 7, 0.8);
+    color:#fff;
+  }
 
 
   
