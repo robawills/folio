@@ -22,10 +22,18 @@ $scrollhide-nav-transition-speed: 0.8s;
         height: auto;
         fill:#fff;
         transition: all 0.4s ease;
+
+        &--work {
+            fill: $dark-gray;
+        }
     }
 
     &__logo:hover {
         fill: $blue;
+    }
+
+    &--work {
+        background-color: rgb(255, 255, 255);
     }
 }
 

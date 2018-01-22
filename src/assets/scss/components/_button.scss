@@ -8,7 +8,15 @@
         padding: 0;
         color:$blue;
         background-color: white;
+
+        &--work {
+            color: white;
+            background-color: $blue;
+        }
+
     }
+
+    
     
     &--round:hover {
         background-color: $blue;
@@ -28,4 +36,9 @@
     }
     
 
+}
+
+
+.button--round--work:hover {
+    background-color: $dark-gray;
 }

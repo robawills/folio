@@ -29,9 +29,9 @@ $(window).scroll(function(event){
 	var yOffset = window.pageYOffset;
 	var breakpoint = 150;
 	if (yOffset > breakpoint){
-	  $(".head").addClass('active');
+	  $(".bg-gray").addClass('active');
 	}else{
-	  $(".head").removeClass('active');
+	  $(".bg-gray").removeClass('active');
 	}
   
   });
