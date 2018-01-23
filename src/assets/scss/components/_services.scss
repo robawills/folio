@@ -1,5 +1,4 @@
 .services {
-    margin: 5rem 0 0;
     padding: 4rem 0;
     color: black;
 
@@ -16,31 +15,30 @@
 }
 
 @include breakpoint(medium) {
-    margin: 7rem 0 0;
-    padding: 8rem 0;
-    color: black;
+    .services {
+        margin: 10rem 0;
+        color: black;
 
-    h4 {
-        margin-bottom: 2rem;
-    }
+        h4 {
+            margin-bottom: 2rem;
+        }
 
-    &__cell {
-        padding: 0 0.75rem;
-        margin-bottom: 10rem;
- 
+        &__cell {
+            padding: 0 0.75rem;
+            margin-bottom: 10rem;
+    
+        }
     }
     
 }
 
-@include breakpoint(larger only) {
-    .services {
+@include breakpoint(larger) {
     
+    .services { 
+        margin: 10rem 0;   
         &__cell {
             padding: 0 0.75rem;
             margin-bottom: 2rem;
-     
         }
-       
     }
-    
 }

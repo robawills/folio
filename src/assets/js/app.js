@@ -44,20 +44,27 @@ $(window).scroll(function(event){
 
 var darkgrey = "#0e0e0e",
 	white = "#ffffff",
-	lightgrey = "#F7F6F2";
+	lightgrey = "#F7F6F2",
+	white2 = "#ffffff";
 
 $(window).on("scroll touchmove", function() {
 		if ($(document).scrollTop() >= $("#darkgrey").position().top) {
 				$('.hero').css('background-color', $("#darkgrey").attr("data-color"));
-
 		};
+
 		if ($(document).scrollTop() > $("#white").position().top) {
 				$('.hero').css('background', $("#white").attr("data-color"))
 		};
-		if ($(document).scrollTop() > $("#lightgrey").position().top) {
 
-				$('.services').css('background', $("#lightgrey").attr("data-color"))
+		if ($(document).scrollTop() > $("#white2").position().top) {
+				$('body').css('background', $("#white2").attr("data-color"))
 		};
+
+		if ($(document).scrollTop() > $("#lightgrey").position().top) {
+				$('body').css('background', $("#lightgrey").attr("data-color"))
+		};
+
+		
 
 });
 jackHarnerSig("light")
