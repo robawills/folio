@@ -2,120 +2,67 @@
 
     margin-top: 10rem;
 
-    &--feature {
-        margin-top: -15rem;
+    &__hero {
+        margin-top: 0;
+        padding: 10rem 0 5rem;
+        &--metis {
+            background-color: #112f35;
+            color: #fff;
+        }
     }
 
-    &__img {
-        height: 15rem;
-        margin-bottom: 1.75rem;
+    &__info {
+        margin: 3rem 0 8rem;
     }
 
-    &__info .button {
-        display: block;
-        width: 2rem;
-        height: 2rem;
-        margin-top: 1rem;
-        border-color: $blue;
-        color: $blue;
-        background-color: none;
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
     }
 
-    &__info .button:hover {
-        border-color: $blue;
+    &__sub-title {
+        margin: 3rem 0 1.5rem;
+    }
+
+    &__copy {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+
+
+    &__list {
+        list-style: none;
+        margin: 1rem 0;
+        padding: 0;
+        font-size: 0.75rem;
+
+        &__item {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__link {
         color: white;
-        background-color: $blue;
-    }
 
-    &__ft-cell {
-        margin: 3rem 0;
-        position: relative;
-    }
-
-    &__ft-cell:hover {
-        .button--view {
-            background-color: $dark-gray;
-            color: white;
-            width: 1.8rem;
-            height: 1.8rem;
-            padding: 0.32rem 0.2rem 0;
-        }
-        .project__img {
-            transform: translate3d(0,-0.4rem,0);
-            transition: opacity 600ms ease-out,transform 300ms ease-in-out;
+        &--metis {
+            color: #ff4500;
         }
     }
 
-    &__cell {
-        margin: 0;
-        position: relative;
+    &__link:hover {
+        color: white;
+
     }
 
-    &__cell:hover {
-        .button--view {
-            background-color: $dark-gray;
-            color: white;
-            width: 1.8rem;
-            height: 1.8rem;
-            padding: 0.32rem 0.2rem 0;
-        }
-        .project__img {
-            transform: translate3d(0,-0.4rem,0);
-            transition: opacity 600ms ease-out,transform 300ms ease-in-out;
-        }
-    }
 
-    &__margin {
-        padding-top: 5rem;
-    }
 }
 
 @include breakpoint(medium) {
-    .project {
-        &__cell {
-            margin-bottom: 0;
-        }
-
-        &__img {
-            height: 12rem;
     
-            &--m {
-                height: 15rem;
-            }
-    
-            &--l {
-                height: 19rem;
-            }
-        }
-    }
 }
 
 @include breakpoint(large) {
-    .project {
-
-        &__cell {
-            margin: 4.5rem 0;
-            padding: 0 1rem;
-        }
-
-        &__img {
-            height: 16rem;
     
-            &--m {
-                height: 20rem;
-            }
-    
-            &--l {
-                height: 24rem;
-            }
-
-            &--wm {
-                height: 30rem;
-            }
-    
-            &--wl {
-                height: 34rem;
-            }
-        }
-    }
 }

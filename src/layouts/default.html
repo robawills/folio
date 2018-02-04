@@ -12,7 +12,7 @@
   </head>
   <body>
 <div class="app">
-    
+  {{#unlesspage 'work'}}
     <header class="head bg-gray" >
       <div class="grid-container">
         <div class="grid-x align-middle align-justify">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </header>
-    
+    {{/unlesspage}}
 
     {{#ifpage 'work'}}
       <header class="head head--work" >

@@ -44,7 +44,7 @@ $(window).scroll(function(event){
 
 var darkgrey = "#0e0e0e",
 	white = "#ffffff",
-	lightgrey = "#F7F6F2",
+	lightgrey = "#EAE8E1",
 	white2 = "#ffffff";
 
 $(window).on("scroll touchmove", function() {
