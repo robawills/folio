@@ -40,6 +40,7 @@ $(window).scroll(function(event){
 
 
 
+
 // Background colours
 
 var darkgrey = "#0e0e0e",
@@ -64,9 +65,8 @@ $(window).on("scroll touchmove", function() {
 				$('body').css('background', $("#lightgrey").attr("data-color"))
 		};
 
-		
 
 });
-jackHarnerSig("light")
+
 
 

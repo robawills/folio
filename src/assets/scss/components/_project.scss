@@ -1,14 +1,9 @@
 .project {
 
-    margin-top: 10rem;
-
     &__hero {
         margin-top: 0;
         padding: 10rem 0 5rem;
-        &--metis {
-            background-color: #112f35;
-            color: #fff;
-        }
+        color: #fff;
     }
 
     &__info {
