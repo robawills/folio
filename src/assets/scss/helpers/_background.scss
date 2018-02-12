@@ -3,12 +3,40 @@
 //     background-size: 100% auto;
 // }
 
-.metis {
-  background-color: #112f35;
+
+.scroll_container {
+  height: 100vh;
+  display: block;
+  overflow: scroll;
 }
 
-body {
-  
-        transition: all 500ms;
-  
-      }
+
+#content {
+  background: #fff;
+  z-index: -1;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+
+  &--metis {
+    background: #112f35;
+  }
+
+  &--home {
+    background: #0e0e0e;
+  }
+}
+#content.metis {
+  background: #112f35;
+}
+#content.white {
+  background: #fff;
+}
+
+#content.home {
+  background: #112f35;
+}

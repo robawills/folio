@@ -43,66 +43,30 @@ $(window).scroll(function(event){
 
 // Background colours
 
-// var darkgrey = "#0e0e0e",
-// 	white = "#ffffff",
-// 	lightgrey = "#EAE8E1",
-// 	white2 = "#ffffff";
-
-// $(window).on("scroll touchmove", function() {
-// 		if ($(document).scrollTop() >= $("#darkgrey").position().top) {
-// 				$('.hero').css('background-color', $("#darkgrey").attr("data-color"));
-// 		};
-
-// 		if ($(document).scrollTop() > $("#white").position().top) {
-// 				$('.hero').css('background', $("#white").attr("data-color"))
-// 		};
-
-// 		if ($(document).scrollTop() > $("#white2").position().top) {
-// 				$('body').css('background', $("#white2").attr("data-color"))
-// 		};
-
-// 		if ($(document).scrollTop() > $("#lightgrey").position().top) {
-// 				$('body').css('background', $("#lightgrey").attr("data-color"))
-// 		};
-
-
-// });
-
-
-
-$(window).on("scroll touchmove", function() {
-
-
-			if ($(document).scrollTop() >= $("#hero").position().top) {
-
-				$('body, .hero').css('background', $("#hero").attr("data-color"));
-
-			};
-
-
-			if ($(document).scrollTop() > $("#white").position().top) {
-
-				$('body, .hero').css('background', $("#white").attr("data-color"));
-
-			};
-
-			if ($(document).scrollTop() > $("#gray").position().top) {
-
-				$('body').css('background', $("#gray").attr("data-color"));
-
-			};
-
-			if ($(document).scrollTop() >= $("#home").position().top) {
-
-				$('.hero').css('background-color', $("#home").attr("data-color"));
-
-			};
-
-			if ($(document).scrollTop() >= $("#homewhite").position().top) {
-
-				$('.hero').css('background', $("#homewhite").attr("data-color"));
-
-			};
-
-		});
+function querySelectorArray(query, root) {
+	return Array.prototype.slice.call((root || document).querySelectorAll(query));
+  }
+  
+  var elements = querySelectorArray("[data-scroll]"),
+	bg = document.getElementById("content"),
+	container = document.querySelector(".scroll_container");
+  
+  elements.forEach(function(color) {
+	var group = color.getAttribute("data-scroll"),
+	  sections = querySelectorArray("[data-" + group + "]");
+  
+	container.addEventListener("scroll", function() {
+	  var lastSection = false;
+	  sections.forEach(function(section) {
+		var offset = section.getBoundingClientRect();
+		//the magic
+		if (
+		  offset.top - window.innerHeight / 2 < 0 &&
+		  offset.top > -offset.height
+		)
+		  lastSection = section.getAttribute("data-" + group + "");
+	  });
+	  bg.className = lastSection || "";
+	});
+  });
 
