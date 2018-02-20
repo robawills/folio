@@ -2,25 +2,6 @@
     #APP WRAPPER
 \*----------------------------------------------------------------------------*/
 
-.app {
-
-    &__head {
-
-    }
-
-    &__main {
-
-    }
-
-    &__aside {
-        
-    }
-
-    &__foot {
-
-    }
-}
-
 html, body, .app {
     display: flex;
     flex-direction: column;

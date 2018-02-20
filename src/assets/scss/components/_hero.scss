@@ -1,12 +1,4 @@
 .hero {
-    background-color: #0e0e0e;
-    transition:all 200ms;
-
-    &--home {
-        background-color: #0e0e0e;
-        background-image: url(../img/home-hero.svg);
-        background-size: 100% auto;
-    }
 
     &__slider {
         color: $blue;
@@ -18,8 +10,8 @@
     flex-direction: row;
     align-items: center;
     color: white;
-    height: 100vh;
-    min-height: 23rem;
-    margin-bottom: 4rem;
+    height: 85vh;
+    min-height: 30rem;
+    margin: 0 0 10rem;
 
 }

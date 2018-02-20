@@ -35,7 +35,7 @@
 @include breakpoint(larger) {
     
     .services { 
-        margin: 10rem 0;   
+        margin: 2rem 0 10rem;   
         &__cell {
             padding: 0 0.75rem;
             margin-bottom: 2rem;

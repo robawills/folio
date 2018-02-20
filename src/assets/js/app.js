@@ -38,35 +38,22 @@ $(window).scroll(function(event){
 
 
 
+// Background
+
+var black = "#070707",
+		white = "#fff";
+
+$(window).on("scroll touchmove", function() {
+		if ($(document).scrollTop() >= $("#black").position().top) {
+				$('.bg').css('background', $("#black").attr("data-color"));
+
+		};
+		if ($(document).scrollTop() > $("#white").position().top) {
+				$('.bg').css('background', $("#white").attr("data-color"))
+		};
+});
+jackHarnerSig("light")
 
 
 
-// Background colours
-
-function querySelectorArray(query, root) {
-	return Array.prototype.slice.call((root || document).querySelectorAll(query));
-  }
-  
-  var elements = querySelectorArray("[data-scroll]"),
-	bg = document.getElementById("content"),
-	container = document.querySelector(".scroll_container");
-  
-  elements.forEach(function(color) {
-	var group = color.getAttribute("data-scroll"),
-	  sections = querySelectorArray("[data-" + group + "]");
-  
-	container.addEventListener("scroll", function() {
-	  var lastSection = false;
-	  sections.forEach(function(section) {
-		var offset = section.getBoundingClientRect();
-		//the magic
-		if (
-		  offset.top - window.innerHeight / 2 < 0 &&
-		  offset.top > -offset.height
-		)
-		  lastSection = section.getAttribute("data-" + group + "");
-	  });
-	  bg.className = lastSection || "";
-	});
-  });
 

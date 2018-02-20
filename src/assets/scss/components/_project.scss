@@ -7,7 +7,7 @@
     }
 
     &__info {
-        margin: 3rem 0 8rem;
+        margin: 3rem 0 6rem;
     }
 
     &__title {
@@ -24,8 +24,6 @@
         line-height: 1.5rem;
         margin-bottom: 3rem;
     }
-
-
 
     &__list {
         list-style: none;
@@ -51,7 +49,9 @@
 
     }
 
-
+    &--metis {
+        background-color: #112f35;
+    }
 }
 
 @include breakpoint(medium) {
