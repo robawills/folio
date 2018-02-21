@@ -52,7 +52,7 @@ $(window).on("scroll touchmove", function() {
 				$('.bg').css('background', $("#white").attr("data-color"))
 		};
 });
-jackHarnerSig("light")
+
 
 
 
