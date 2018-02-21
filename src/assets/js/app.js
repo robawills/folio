@@ -40,18 +40,18 @@ $(window).scroll(function(event){
 
 // Background
 
-var black = "#070707",
-		white = "#fff";
+// var black = "#070707",
+// 		white = "#fff";
 
-$(window).on("scroll touchmove", function() {
-		if ($(document).scrollTop() >= $("#black").position().top) {
-				$('.bg').css('background', $("#black").attr("data-color"));
+// $(window).on("scroll touchmove", function() {
+// 		if ($(document).scrollTop() >= $("#black").position().top) {
+// 				$('.bg').css('background', $("#black").attr("data-color"));
 
-		};
-		if ($(document).scrollTop() > $("#white").position().top) {
-				$('.bg').css('background', $("#white").attr("data-color"))
-		};
-});
+// 		};
+// 		if ($(document).scrollTop() > $("#white").position().top) {
+// 				$('.bg').css('background', $("#white").attr("data-color"))
+// 		};
+// });
 
 
 
