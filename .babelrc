@@ -1,4 +1,6 @@
 {
 	"presets": ["es2015"],
-  "compact": false
+  "compact": false,
+  "ignore": "node_modules",
+  "plugins": ["transform-object-rest-spread"]
 }
