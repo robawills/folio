@@ -14,11 +14,9 @@
   .scroll_container section {
     width: 100%;
     display: block;
-    color:#fff;
   }
   
   #content {
-    background: blue;
     z-index: -1;
     display: block;
     position: fixed;
@@ -27,12 +25,16 @@
     left: 0;
     right: 0;
     transition: 0.5s;
+
+
+      background: aquamarine;
+
   }
-  #content.blue {
-    background: blue;
+  #content.black {
+    background: #000;
   }
-  #content.red {
-    background: red;
+  #content.white {
+    background: #fff;
   }
   #content.yellow {
     background: yellow;
@@ -47,4 +49,5 @@
     background: grey;
   }
   
-  
+
+

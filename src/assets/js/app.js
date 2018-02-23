@@ -38,20 +38,7 @@ import Foundation from 'foundation-sites';
 
 
 
-// Background
 
-// var black = "#070707",
-// 		white = "#fff";
-
-// $(window).on("scroll touchmove", function() {
-// 		if ($(document).scrollTop() >= $("#black").position().top) {
-// 				$('.bg').css('background', $("#black").attr("data-color"));
-
-// 		};
-// 		if ($(document).scrollTop() > $("#white").position().top) {
-// 				$('.bg').css('background', $("#white").attr("data-color"))
-// 		};
-// });
 
 
 
@@ -81,5 +68,6 @@ elements.forEach(function(color) {
     bg.className = lastSection || "";
   });
 });
+
 
 
