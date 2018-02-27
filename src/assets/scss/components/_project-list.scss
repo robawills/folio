@@ -7,11 +7,14 @@
         height: 15rem;
         margin-bottom: 1.75rem;
         background-color: none;
+        transition: all .2s ease-in-out;
     }
 
     &__info {
         margin: 1rem 0;
+        font-size: 1.15rem;
     }
+
 
     &__info .button {
         display: block;
@@ -29,6 +32,11 @@
         background-color: $blue;
     }
 
+    &__title {
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
     &__cell {
         margin: 0;
         position: relative;
@@ -43,8 +51,12 @@
             padding: 0.32rem 0.2rem 0;
         }
         .project-list__img {
-            transform: translate3d(0,-1rem, 0);
-            transition: opacity 600ms ease-out,transform 300ms ease-in-out;
+            // transform: translate3d(0,-1rem, 0);
+            // transition: opacity 600ms ease-out,transform 600ms ease-in-out;
+            // width: 95%;
+            transform: scale(0.97);
+
+            
         }
     }
 
@@ -82,7 +94,8 @@
             }
     
             &--wl {
-                height: 34rem;
+                height: 37rem;
+                
             }
         }
     }
