@@ -4,13 +4,18 @@
 
 
     &__img {
-        height: 15rem;
-        margin-bottom: 1.75rem;
+        height: 9rem;
+        
         background-color: none;
+        transition: all .2s ease-in-out;
     }
 
     &__info {
-        margin: 1rem 0;
+        margin: 1rem 0 1.5rem;
+    }
+    &__title {
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
     }
 
     &__info .button {
@@ -29,11 +34,6 @@
         background-color: $blue;
     }
 
-    &__cell {
-        margin: 0;
-        position: relative;
-    }
-
     &__cell:hover {
         .button--view {
             background-color: $dark-gray;
@@ -43,10 +43,21 @@
             padding: 0.32rem 0.2rem 0;
         }
         .project-list__img {
-            transform: translate3d(0,-1rem, 0);
-            transition: opacity 600ms ease-out,transform 300ms ease-in-out;
+            transform: scale(0.97);
+
+            
         }
     }
+
+
+    
+
+    &__cell {
+        margin: 0;
+        position: relative;
+    }
+
+    
 
     &__margin {
         padding-top: 5rem;
@@ -61,8 +72,29 @@
         }
 
         &__img {
-            height: 12rem;
+            height: 16rem;
+            margin-bottom: 1rem;
+
+            &--wm {
+                height: 16rem;
+            }
+    
+            &--wl {
+                height: 20rem;
+                
+            }
         }
+
+        &__info {
+            margin: 1rem 0 2rem;
+            font-size: 0.75rem;
+        }
+        &__title {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        
     }
 }
 
@@ -76,14 +108,27 @@
 
         &__img {
             height: 16rem;
+            margin-bottom: 1.5rem;
 
             &--wm {
                 height: 30rem;
             }
     
             &--wl {
-                height: 34rem;
+                height: 37rem;
+                
             }
+        }
+
+        &__info {
+            margin: 1rem 0;
+            font-size: 1.15rem;
+        }
+        &__title {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
         }
     }
 }
+
+
