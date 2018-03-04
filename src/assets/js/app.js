@@ -10,4 +10,5 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-import './modules/scrollreveal';
+import bgScroll from './modules/bgScroll';
+new bgScroll();

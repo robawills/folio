@@ -37,12 +37,12 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uncss": "^1.0.6",
+    "intersection-observer": "^0.5.0",
     "js-yaml": "^3.10.0",
     "panini": "^1.6.2",
     "rimraf": "^2.6.2",
     "style-sherpa": "^1.0.2",
     "vinyl-named": "^1.1.0",
-    "waypoints": "^4.0.1",
     "webpack": "^3.11.0",
     "webpack-stream": "^4.0.2",
     "yargs": "^11.0.0"
