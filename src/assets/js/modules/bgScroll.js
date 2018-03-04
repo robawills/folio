@@ -11,8 +11,9 @@ export default function(options) {
 
     // Private: Default settings object
     const _defaults = {
-        els: '.js-colourChange',
-        config: {}
+        els: '[data-color-group]',
+        config: {
+        }
     };
 
     // Private: Merge passed in object with defaults
@@ -41,19 +42,46 @@ export default function(options) {
     // Public: Initialise module
     const init = (() => {
 
+        // Get all elements
         const $els =  document.querySelectorAll(_settings.els);
 
-        const observer = new IntersectionObserver(entries => {
+        // Create an empty array we can push to later
+        let classBackLog = []
+
+        // Observer setup
+        const observSetup = (entries) => {
+
             entries.forEach(entry => {
     
+                // Check the section is in view
                 if ( entry.intersectionRatio > 0 ) {
-                    document.body.style.backgroundColor = entry.target.dataset.colorGroup;
+
+                    // Get the data attribute containing the class to add to the body
+                    const value = entry.target.dataset.colorGroup;
+
+                    // If our classBackLog array doesn't include the class, then add it
+                    if ( !classBackLog.includes(value) ) {
+                        
+                        classBackLog.push(value);
+
+                    }
+
+                    // Remove all of the classes we've previously observed from our classBackLog array
+                    document.body.classList.remove(...classBackLog);
+
+                    // Add the class from our data attribute
+                    document.body.classList.add(value);
                 }
             });
-        }, _settings.config);
+        }
+        // Setup the observer
+        let observer = new IntersectionObserver(observSetup, _settings.config);
     
+        // Attach the observer to every element instance
         $els.forEach($el => {
+
             observer.observe($el);
+
         });
     })();
 
