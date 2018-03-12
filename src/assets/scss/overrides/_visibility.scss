@@ -2,6 +2,20 @@
     #VISIBILITY TRUMPS
 \*----------------------------------------------------------------------------*/
 
+body {
 
+    &.black {
+        background-color: #000;
+    }
+
+    &.white {
+        background-color: #fff;
+    }
+
+    &.metis {
+        background-color: #112f35;
+    }
+
+}
 
 

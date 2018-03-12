@@ -10,113 +10,114 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet"> 
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
-  <body>
-<div class="app scroll_container">
-  {{#unlesspage 'work'}}
-    <header class="head bg-gray" >
-      <div class="grid-container">
-        <div class="grid-x align-middle align-justify">
-          <div class="small-4 medium-2 large-1 cell">
-            <svg version="1.1" class="head__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1564 1349" enable-background="new 0 0 1564 1349" xml:space="preserve">
-              <path d="M1147.5,1073.7c-79.2-0.7-173.4-202.7-245.5-358.1c0,0,46.1-175.3,139.1-187.4c4.9-0.6,8.9,4.4,21.4,16	c58.6,54,216.3,531.4,337.8,529.3L1147.5,1073.7z"/>
-              <path d="M1301.8,257.9c-6,281.7-22.3,475.5-45.4,603.4c0,0,111.5,197.6,171.7,202.5	c51.1,4.2,113.5-262.7,125.1-805.9H1301.8z"/>
-              <path d="M758.9,519.4c-115.5-0.4-190.3,376.2-268.3,600.4c33.2,177.1,138.6,207.2,138.6,207.2	c139.9-79.7,221.8-813.4,383-807.5L758.9,519.4z"/>
-              <path d="M263.4,11.5c0,0,121.5,1328.5,336.8,1324.1l-254.5,0C132.3,1327.2,12,11.5,12,11.5H263.4z"/>
-            </svg>
-          </div>
-          <div class="small-8 medium-7 large-9 cell">
-            <ul class="menu align-right">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>
-          <div class="hide-for-small-only medium-1 cell text-right">
-            <a href="mailto:info@kbamarketing.co.uk">
-              <button class="round button button--round">
-                  <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 828.4 828.4">
-                    <path class="st0" d="M808.3 8.9c10.1 7.3 14.2 17.1 12.3 29.3l-117 702.1c-1.5 8.8-6.4 15.7-14.6 20.6-4.3 2.4-9 3.7-14.2 3.7-3.4 0-7-.8-11-2.3L422.9 664 286.7 813.4c-5.5 6.4-12.6 9.6-21.5 9.6-4.3 0-7.8-.6-10.5-1.8-5.8-2.1-10.4-5.7-13.7-10.7-3.4-5-5-10.6-5-16.7V587.2L20.3 498.9C9 494.7 2.9 486.3 2 473.8c-.9-11.9 4-20.9 14.6-27L777.2 8c10.6-6.4 21-6.1 31.1.9zM651.9 694.1L753 89.4l-655.5 378L251.1 530l394.5-292.1-218.5 364.3 224.8 91.9z"/>
-                  </svg>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-    {{/unlesspage}}
 
-    {{#ifpage 'work'}}
-      <header class="head head--work" >
+  <body>
+
+    <div class="app">
+    {{#unlesspage 'work'}}
+      <header class="head bg-gray" >
         <div class="grid-container">
           <div class="grid-x align-middle align-justify">
             <div class="small-4 medium-2 large-1 cell">
-              <svg version="1.1" class="head__logo head__logo--work" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1564 1349" enable-background="new 0 0 1564 1349" xml:space="preserve">
+              <svg version="1.1" class="head__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1564 1349" enable-background="new 0 0 1564 1349" xml:space="preserve">
                 <path d="M1147.5,1073.7c-79.2-0.7-173.4-202.7-245.5-358.1c0,0,46.1-175.3,139.1-187.4c4.9-0.6,8.9,4.4,21.4,16	c58.6,54,216.3,531.4,337.8,529.3L1147.5,1073.7z"/>
                 <path d="M1301.8,257.9c-6,281.7-22.3,475.5-45.4,603.4c0,0,111.5,197.6,171.7,202.5	c51.1,4.2,113.5-262.7,125.1-805.9H1301.8z"/>
                 <path d="M758.9,519.4c-115.5-0.4-190.3,376.2-268.3,600.4c33.2,177.1,138.6,207.2,138.6,207.2	c139.9-79.7,221.8-813.4,383-807.5L758.9,519.4z"/>
                 <path d="M263.4,11.5c0,0,121.5,1328.5,336.8,1324.1l-254.5,0C132.3,1327.2,12,11.5,12,11.5H263.4z"/>
               </svg>
             </div>
-            <div class="small-8 medium-10 large-11 cell">
-              <ul class="menu menu--work align-right">
+            <div class="small-8 medium-7 large-9 cell">
+              <ul class="menu align-right">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
               </ul>
             </div>
-            <!-- <div class="hide-for-small-only medium-1 cell text-right">
-              <a href="mailto:robawills@me.com">
-                <button class="round button button--round button--round--work">
+            <div class="hide-for-small-only medium-1 cell text-right">
+              <a href="mailto:info@kbamarketing.co.uk">
+                <button class="round button button--round">
                     <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 828.4 828.4">
                       <path class="st0" d="M808.3 8.9c10.1 7.3 14.2 17.1 12.3 29.3l-117 702.1c-1.5 8.8-6.4 15.7-14.6 20.6-4.3 2.4-9 3.7-14.2 3.7-3.4 0-7-.8-11-2.3L422.9 664 286.7 813.4c-5.5 6.4-12.6 9.6-21.5 9.6-4.3 0-7.8-.6-10.5-1.8-5.8-2.1-10.4-5.7-13.7-10.7-3.4-5-5-10.6-5-16.7V587.2L20.3 498.9C9 494.7 2.9 486.3 2 473.8c-.9-11.9 4-20.9 14.6-27L777.2 8c10.6-6.4 21-6.1 31.1.9zM651.9 694.1L753 89.4l-655.5 378L251.1 530l394.5-292.1-218.5 364.3 224.8 91.9z"/>
                     </svg>
                 </button>
               </a>
-            </div> -->
+            </div>
           </div>
         </div>
       </header>
-    {{/ifpage}}
-  
+      {{/unlesspage}}
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
-
- 
+      {{#ifpage 'work'}}
+        <header class="head head--work" >
+          <div class="grid-container">
+            <div class="grid-x align-middle align-justify">
+              <div class="small-4 medium-2 large-1 cell">
+                <svg version="1.1" class="head__logo head__logo--work" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1564 1349" enable-background="new 0 0 1564 1349" xml:space="preserve">
+                  <path d="M1147.5,1073.7c-79.2-0.7-173.4-202.7-245.5-358.1c0,0,46.1-175.3,139.1-187.4c4.9-0.6,8.9,4.4,21.4,16	c58.6,54,216.3,531.4,337.8,529.3L1147.5,1073.7z"/>
+                  <path d="M1301.8,257.9c-6,281.7-22.3,475.5-45.4,603.4c0,0,111.5,197.6,171.7,202.5	c51.1,4.2,113.5-262.7,125.1-805.9H1301.8z"/>
+                  <path d="M758.9,519.4c-115.5-0.4-190.3,376.2-268.3,600.4c33.2,177.1,138.6,207.2,138.6,207.2	c139.9-79.7,221.8-813.4,383-807.5L758.9,519.4z"/>
+                  <path d="M263.4,11.5c0,0,121.5,1328.5,336.8,1324.1l-254.5,0C132.3,1327.2,12,11.5,12,11.5H263.4z"/>
+                </svg>
+              </div>
+              <div class="small-8 medium-10 large-11 cell">
+                <ul class="menu menu--work align-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </div>
+              <!-- <div class="hide-for-small-only medium-1 cell text-right">
+                <a href="mailto:robawills@me.com">
+                  <button class="round button button--round button--round--work">
+                      <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 828.4 828.4">
+                        <path class="st0" d="M808.3 8.9c10.1 7.3 14.2 17.1 12.3 29.3l-117 702.1c-1.5 8.8-6.4 15.7-14.6 20.6-4.3 2.4-9 3.7-14.2 3.7-3.4 0-7-.8-11-2.3L422.9 664 286.7 813.4c-5.5 6.4-12.6 9.6-21.5 9.6-4.3 0-7.8-.6-10.5-1.8-5.8-2.1-10.4-5.7-13.7-10.7-3.4-5-5-10.6-5-16.7V587.2L20.3 498.9C9 494.7 2.9 486.3 2 473.8c-.9-11.9 4-20.9 14.6-27L777.2 8c10.6-6.4 21-6.1 31.1.9zM651.9 694.1L753 89.4l-655.5 378L251.1 530l394.5-292.1-218.5 364.3 224.8 91.9z"/>
+                      </svg>
+                  </button>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </header>
+      {{/ifpage}}
     
 
-    <footer class="footer">
-        <div class="grid-container">
-          <div class="grid-x align-justify">
-            <div class="cell medium-6">
-              <h3 class="bold letter-spacing">Get in touch</h3>
-              <form class="footer__form">
-                  <label>
-                    <input type="text" placeholder="Name*">
-                  </label>
-                  <label>
-                    <input type="email" placeholder="Email*">
-                  </label>
-                  <label>
-                    <input type="email" placeholder="Message">
-                  </label>
-              </form>
-              <button class="button">
-                Send
-              </button>
+      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+      {{> body}}
+
+  
+      
+
+      <footer class="footer">
+          <div class="grid-container">
+            <div class="grid-x align-justify">
+              <div class="cell medium-6">
+                <h3 class="bold letter-spacing">Get in touch</h3>
+                <form class="footer__form">
+                    <label>
+                      <input type="text" placeholder="Name*">
+                    </label>
+                    <label>
+                      <input type="email" placeholder="Email*">
+                    </label>
+                    <label>
+                      <input type="email" placeholder="Message">
+                    </label>
+                </form>
+                <button class="button">
+                  Send
+                </button>
+              </div>
+              <div class="cell small-12">
+                  <p class="small footer__copy">© Rob Wills 2018</p>
+              </div>
+              
             </div>
-            <div class="cell small-12">
-                <p class="small footer__copy">© Rob Wills 2018</p>
-            </div>
-            
           </div>
-        </div>
-      </footer>
+        </footer>
+
+      </div>
 
     </div>
-    <div id="content" data-scroll="color-group"></div>
 
-  </div>
-  <script src="{{root}}assets/js/app.js"></script>
-  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="{{root}}assets/js/app.js"></script>
   
   </body>
 </html>
