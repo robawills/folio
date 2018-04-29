@@ -12,3 +12,9 @@ $(document).foundation();
 
 import bgScroll from './modules/bgScroll';
 new bgScroll();
+
+
+
+$('[data-curtain-menu-button]').click(function(){
+    $('body').toggleClass('curtain-menu-open');
+  })

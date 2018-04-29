@@ -23,6 +23,11 @@
         color: white;
     }
 
+    &--round:focus {
+        background-color: white;
+        color: $blue;
+    }
+
     &--view {
         border-radius: 50%;
         width: 1rem;
@@ -41,4 +46,9 @@
 
 .button--round--work:hover {
     background-color: $dark-gray;
+}
+
+.close-button {
+    position: relative;
+    float: right;
 }
