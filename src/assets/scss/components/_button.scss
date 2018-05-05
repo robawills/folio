@@ -16,7 +16,16 @@
 
     }
 
-    
+    &--about {
+        background-color: white;
+        color:black;
+        margin: 0 0 3rem;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
     
     &--round:hover {
         background-color: $blue;
