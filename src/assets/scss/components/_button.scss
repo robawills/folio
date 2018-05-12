@@ -1,4 +1,5 @@
 .button {
+    border-radius: rem-calc(2px); 
 
     &--round {
         border-radius: 50%;
@@ -17,12 +18,11 @@
     }
 
     &--about {
-        background-color: white;
-        color:black;
+        background-color:$black;
+        color:white;
         margin: 0 0 3rem;
         text-transform: uppercase;
         font-size: 0.75rem;
-        border-radius: rem-calc(2px); 
 
         &:hover {
             background-color: $blue;
@@ -50,8 +50,16 @@
         color: $blue;
         transition: all 0.4s ease;
     }
-    
 
+    &--footer {
+        background-color: $white;
+        color: $dark-gray;
+
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+        }
+    }
 }
 
 

@@ -15,7 +15,7 @@
 
     <div class="app">
     
-    {{#unlesspage 'work'}}
+    {{#unlesspage 'about'}}
       <header class="head bg-gray" >
         <div class="grid-container">
           <div class="grid-x align-middle align-justify">
@@ -49,8 +49,8 @@
       </header>
       {{/unlesspage}}
 
-      {{#ifpage 'work'}}
-        <header class="head head--work" >
+      {{#ifpage 'about'}}
+        <header class="head head--about" >
           <div class="grid-container">
             <div class="grid-x align-middle align-justify">
               <div class="small-4 medium-2 large-1 cell">
@@ -61,20 +61,18 @@
                   <path d="M263.4,11.5c0,0,121.5,1328.5,336.8,1324.1l-254.5,0C132.3,1327.2,12,11.5,12,11.5H263.4z"/>
                 </svg>
               </div>
-              <div class="small-8 medium-10 large-11 cell">
+              <div class="small-8 medium-7 large-9 cell">
                 <ul class="menu menu--work align-right">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#">About</a></li>
                 </ul>
               </div>
               <div class="hide-for-small-only medium-1 cell text-right">
-                <a href="mailto:robawills@me.com">
                   <button class="round button button--round button--round--work">
                       <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 828.4 828.4">
                         <path class="st0" d="M808.3 8.9c10.1 7.3 14.2 17.1 12.3 29.3l-117 702.1c-1.5 8.8-6.4 15.7-14.6 20.6-4.3 2.4-9 3.7-14.2 3.7-3.4 0-7-.8-11-2.3L422.9 664 286.7 813.4c-5.5 6.4-12.6 9.6-21.5 9.6-4.3 0-7.8-.6-10.5-1.8-5.8-2.1-10.4-5.7-13.7-10.7-3.4-5-5-10.6-5-16.7V587.2L20.3 498.9C9 494.7 2.9 486.3 2 473.8c-.9-11.9 4-20.9 14.6-27L777.2 8c10.6-6.4 21-6.1 31.1.9zM651.9 694.1L753 89.4l-655.5 378L251.1 530l394.5-292.1-218.5 364.3 224.8 91.9z"/>
                       </svg>
                   </button>
-                </a>
               </div>
             </div>
           </div>
@@ -88,11 +86,11 @@
      
       
       
-      <footer class="footer">
+      <footer class="footer" style="background: url(assets/img/home-hero.svg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
           <div class="grid-container">
-            <div class="grid-x align-justify">
-              <div class="cell medium-6">
-                <h3 class="bold letter-spacing">Get in touch</h3>
+            <div class="grid-x align-center">
+              <div class="cell medium-6 ">
+                <h2 class="bold letter-spacing">Get in touch</h2>
                 <form class="footer__form">
                     <label>
                       <input type="text" placeholder="Name*">
@@ -104,7 +102,7 @@
                       <input type="email" placeholder="Message">
                     </label>
                 </form>
-                <button class="button">
+                <button class="button button--footer">
                   Send
                 </button>
               </div>
