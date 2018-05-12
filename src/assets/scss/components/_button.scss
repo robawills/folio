@@ -21,6 +21,8 @@
         color:black;
         margin: 0 0 3rem;
         text-transform: uppercase;
+        font-size: 0.75rem;
+        border-radius: rem-calc(2px); 
 
         &:hover {
             background-color: $blue;

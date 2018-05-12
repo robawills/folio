@@ -14,6 +14,7 @@
   <body>
 
     <div class="app">
+    
     {{#unlesspage 'work'}}
       <header class="head bg-gray" >
         <div class="grid-container">
@@ -66,7 +67,7 @@
                   <li><a href="#">About</a></li>
                 </ul>
               </div>
-              <!-- <div class="hide-for-small-only medium-1 cell text-right">
+              <div class="hide-for-small-only medium-1 cell text-right">
                 <a href="mailto:robawills@me.com">
                   <button class="round button button--round button--round--work">
                       <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 828.4 828.4">
@@ -74,7 +75,7 @@
                       </svg>
                   </button>
                 </a>
-              </div> -->
+              </div>
             </div>
           </div>
         </header>
@@ -84,39 +85,9 @@
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
 
-      <div class="full reveal overlay" id="form" data-reveal>
-          <div class="grid-container">
-            <div class="grid-x align-middle align-justify">
-              
-              <div class="small-12 cell ">
-                <button class="close-button round button button--round" data-close aria-label="Close reveal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="small-12 medium-8 cell footer">
-                <h3 class="bold letter-spacing">Get in touch</h3>
-                <form class="footer__form">
-                    <label>
-                      <input type="text" placeholder="Name*">
-                    </label>
-                    <label>
-                      <input type="email" placeholder="Email*">
-                    </label>
-                    <label>
-                      <input type="email" placeholder="Message">
-                    </label>
-                </form>
-                <button class="button">
-                  Send
-                </button>
-              </div>
-            
-          </div>
-        </div>
-      </div>
+     
       
-
+      
       <footer class="footer">
           <div class="grid-container">
             <div class="grid-x align-justify">
